@@ -1,0 +1,28 @@
+/* miniprogram/pages/index/index.wxss */
+.fristpage{
+  height: 90vh;
+  display: flex;/* 布局方法*/
+  flex-direction: column;/* 垂直布局*/
+  align-items: center;/* 水平居中*/
+  justify-content: space-around;/*垂直散列布局 */
+}
+.titleim{
+  width: 600rpx;
+  border-radius: 20%;
+}
+.titletxt{
+  font-size: 50rpx;
+  color: red;
+}
+.titlebut{
+  color: blue;
+  text-size-adjust: 50rpx;
+}
+.but2{
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+}
+.but2 botton{
+  min-height: 20rpx;
+}

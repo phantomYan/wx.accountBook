@@ -1,0 +1,44 @@
+<!--miniprogram/pages/checkStock/checkStock.wxml-->
+
+<view class="all">
+  <view>
+    <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+        <!-- 最初始时的搜索框 -->
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input" bindinput="sthid" placeholder="搜索" />
+        </view>
+        <!-- 可编辑时的搜索框 -->
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+          <icon class="weui-icon-search" type="search" size="14"></icon>
+          <view class="weui-search-bar__text">请输入产品尺码</view>
+        </label>
+      </view>
+      <!-- 取消搜索 -->
+      <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">搜索</view>
+    </view>
+    <!-- <view>
+      <text>产品名：</text>
+      <view>
+        <text>颜色：</text>
+        <text>码号：</text>
+        <text>库存：</text>
+      </view>
+    </view> -->
+
+<view class='stock-list'>
+  <view class="stock-item" wx:if="{{arrtan.length>0}}" wx:for="{{arrtan}}" wx:key="{{item._id}}">
+    <text>产品名：{{item.id}}</text>
+    <text>颜色：{{item.color}} 码号：{{item.size}} 库存：{{item.number}} 价格：{{item.price}}元</text>
+  </view>
+</view>
+    <view class="nothing"></view>
+  </view>
+  <view class="butun">
+  <view class="lastbut">
+  <button plain="ture" bindtap="toall">全部库存</button>
+  <button plain="ture" bindtap="tosize">型号查询</button>
+  </view>
+  </view>
+</view>

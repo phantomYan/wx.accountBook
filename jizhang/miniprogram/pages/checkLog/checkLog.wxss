@@ -1,0 +1,17 @@
+/* miniprogram/pages/checkLog/checkLog.wxss */
+.log-list{
+  min-height: 600rpx;
+  padding: 15rpx;
+}
+.log-item text{
+  width: 100%;
+  height: 60rpx;
+  font-size: 30rpx;
+  color: #8B0000;
+}
+.log-item{
+  display: flex;
+  flex-direction: row;
+  min-height: 60rpx;
+  border-bottom: 1rpx solid black;
+}

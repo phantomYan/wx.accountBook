@@ -1,0 +1,6 @@
+<!--miniprogram/test/pages/my/my.wxml-->
+<view class="fristpage">
+<image class="titleim" src="/pages/images/title1.jpg"></image>
+<text class="titletxt">{{name}}</text>
+<button class="titlebut" open-type="getUserInfo" bindgetuserinfo="getMyInfo">请登录</button>
+</view>

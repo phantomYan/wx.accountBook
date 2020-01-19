@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/user/user",
+    "pages/checkStock/checkStock",
+    "pages/sale/sale",
+    "pages/index/index",
+    "pages/checkLog/checkLog",
+   
+    "pages/addStock/addStock",
+    "pages/cache/cache",
+    "pages/checkStock/allStock/allStock",
+    "pages/checkStockSize/checkStockSize"
+    
+  ],
+  "window": {
+    "backgroundColor": "#00FFFF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#00FFFF",
+    "navigationBarTitleText": "私人销售小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "cloud": true
+}

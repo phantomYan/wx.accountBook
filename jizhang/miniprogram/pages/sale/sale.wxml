@@ -1,0 +1,18 @@
+<!--miniprogram/pages/addStock/addStock.wxml-->
+<view class="title">
+  <text>销 售</text>
+  </view>
+  <view class="addmain">
+  <text>名称</text>
+  <input bindinput="saleid"></input>
+  <text>颜色</text>
+  <input bindinput="salecolor"></input>
+  <text>码号</text>
+  <input bindinput="salesize"></input>
+  <text >卖出数量</text>
+  <input type="number" bindinput="salenumber"></input>
+</view>
+<view class="noth"></view>
+<view class="addm2">
+  <button plain="ture" bindtap="saleit" >确定卖出</button>
+</view>

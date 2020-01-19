@@ -1,0 +1,27 @@
+<!--miniprogram/pages/addStock/addStock.wxml-->
+<view class="title">
+  <text>增加库存</text>
+  </view>
+  <view class="addmain">
+  <text>名称</text>
+  <input bindinput="addid"></input>
+  <text>价格(新增必填)</text>
+  <input type="number" bindinput="addprice"></input>
+  <text>颜色</text>
+  <input bindinput="addcolor"></input>
+  <text>码号</text>
+  <input bindinput="addsize"></input>
+  <text>新增数量 (原有{{shownumber}} 修改完成后{{aimnumber}})</text>
+  <input type="number" bindinput="addnumber"></input>
+</view>
+<view class="noth"></view>
+<view class="addm2">
+  <button plain="ture" bindtap="addstock">确定新增</button>
+  <view class="noth"></view>
+  <text>更改此型号库存（选填） (原有{{shownumber}} 修改完成后{{aimnumber2}})</text>
+  <input type="number" bindinput="changnumber"></input>
+</view>
+<view class="noth"></view>
+<view class="addm3">
+  <button plain="ture" bindtap="changstock">确定修改</button>
+</view>

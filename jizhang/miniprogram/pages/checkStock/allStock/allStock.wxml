@@ -1,0 +1,21 @@
+
+<view class="all">
+  <view>
+    <view class="weui-search-bar">
+      <button bindtap="seach">搜索</button>
+    </view>
+    <view class='stock-list'>
+      <view class="stock-item" wx:if="{{arrtan.length>0}}" wx:for="{{arrtan}}" wx:key="{{item._id}}">
+        <text>产品名：{{item.id}}</text>
+        <text>颜色：{{item.color}} 码号：{{item.size}} 库存：{{item.number}} 价格：{{item.price}}元</text>
+      </view>
+    </view>
+    <view class="nothing"></view>
+  </view>
+  <view class="butun">
+  <view class="lastbut">
+  <button plain="ture" bindtap="tocs">型号查询</button>
+  <button plain="ture" bindtap="tosize">尺码查询</button>
+  </view>
+  </view>
+</view>

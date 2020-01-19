@@ -1,0 +1,10 @@
+<!--miniprogram/pages/checkLog/checkLog.wxml-->
+
+<button plain="ture" bindtap="checklog">点击查看</button>
+
+<view class='log-list'>
+  <view class="log-item" wx:if="{{arrtan.length>0}}" wx:for="{{arrtan}}" wx:key="{{item.time}}">
+    <text>{{item.user}}于{{item.time}}卖出了{{item.num}}件{{item.id}}({{item.color}}-{{item.size}})</text>
+  </view>
+  <!-- <button plain="ture">加载更多</button> -->
+</view>

@@ -1,0 +1,17 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="fristpage">
+  <image class="titleim" src="/pages/images/title1.jpg"></image>
+  
+  <text class="titletxt">{{username}}</text>
+  <text class="titletxt">欢迎使用本程序</text>
+  
+  <view class="but2">
+    <button bindtap="checkstock" plain="ture">查看库存</button>
+    <button bindtap="sale" plain="ture">出售</button>
+  </view>
+  <view class="but2">
+    <button bindtap="checklog" plain="ture">查看日志</button>
+    <button bindtap="addstock" plain="ture">进货</button>
+  </view>
+  
+</view>
